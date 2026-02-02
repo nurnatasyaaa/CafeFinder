@@ -1,0 +1,95 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cafeBackground">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- 1️⃣ Cafe Name -->
+        <TextView
+            android:id="@+id/txtCafeName"
+            android:text="Cafe Name"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/brown_dark"
+            android:layout_marginBottom="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"/>
+
+        <!-- 2️⃣ My Notes -->
+        <TextView
+            android:text="My Notes"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <!-- 3️⃣ Write Notes -->
+        <EditText
+            android:id="@+id/etNotes"
+            android:hint="Write your personal notes here..."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minLines="4"
+            android:gravity="top"
+            android:background="@android:drawable/edit_text"
+            android:padding="10dp"/>
+
+        <!-- 4️⃣ My Photos -->
+        <TextView
+            android:text="📷 My Photos"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <!-- 5️⃣ Photo Preview -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerImages"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="8dp"/>
+
+        <!-- 6️⃣ Add Photo -->
+        <Button
+            android:id="@+id/btnAddPhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="➕ Add Photo"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/brown_main"
+            android:textColor="@android:color/white"/>
+
+        <!-- 7️⃣ Save / Update -->
+        <Button
+            android:id="@+id/btnSaveNotes"
+            android:text="Save / Update"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/brown_main"
+            android:textColor="@android:color/white"/>
+
+        <!-- 8️⃣ LOG HISTORY -->
+        <TextView
+            android:text="🕒 History"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerNotes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"/>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cafeBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HOME"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="@color/cafeText"
+            android:layout_marginBottom="32dp"
+            android:fitsSystemWindows="true"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MAP"
+            android:onClick="openMap"
+            android:backgroundTint="@color/cafePrimary"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="12dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FAVOURITE"
+            android:onClick="openFavourite"
+            android:backgroundTint="@color/cafePrimary"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="12dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="QR CODE MENU"
+            android:onClick="openQr"
+            android:backgroundTint="@color/cafePrimary"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="12dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NOTIFICATION"
+            android:onClick="openNotification"
+            android:backgroundTint="@color/cafePrimary"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="12dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PROFILE"
+            android:onClick="openProfile"
+            android:backgroundTint="@color/cafeAccent"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="16dp"/>
+
+    </LinearLayout>
+</ScrollView>

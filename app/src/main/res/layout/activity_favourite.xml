@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/cafeBackground"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="⭐ My Favourite Cafés"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/brown_dark"
+        android:layout_marginBottom="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"/>
+
+    <TextView
+        android:text="Tap a café to view details. Long press to remove."
+        android:textSize="14sp"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/brown_dark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerFavourite"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>
